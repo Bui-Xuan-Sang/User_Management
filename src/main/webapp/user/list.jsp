@@ -34,12 +34,12 @@
         <c:forEach var="user" items="${users}">
             <tr>
                 <td>${user.id}</td>
-                <td><a href="/users?action=view&id=${product.id}">${product.name}</a></td>
+                <td>${user.name}</td>
                 <td>${user.name}</td>
                 <td>${user.email}</td>
                 <td>${user.country}</td>
-                <td><a class="btn btn-info" href="/users?action=edit&id=${user.id}"><i class="fa-solid fa-pen-to-square"></i></a></td>
-                <td><a class="btn btn-danger" href="/users?action=delete&id=${user.id}"><i class="fa-solid fa-trash"></i></a></td>
+<%--                <td><a class="btn btn-info" href="/users?action=edit&id=${user.id}"><i class="fa-solid fa-pen-to-square"></i></a></td>--%>
+<%--                <td><a class="btn btn-danger" href="/users?action=delete&id=${user.id}"><i class="fa-solid fa-trash"></i></a></td>--%>
             </tr>
         </c:forEach>
         </tbody>
